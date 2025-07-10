@@ -7,7 +7,7 @@ Although quite a bit of this is based on Ned Reid's version, I have chosen to us
 I have also divided the website into a much lightweight public side, and then the private side, with much more data which is being protected behind this so-called password wall.
 
 ## Notices
-- Adapted from [Ned Reid's Version](github.com/NedReid/ButlerJCRWebsite)
+- Adapted from [Ned Reid's Version](https://github.com/NedReid/ButlerJCRWebsite)
 - Complements [the intranet](https://github.com/premraghvani/butlerjcr-intranet/)
 
 ## Maintenance
