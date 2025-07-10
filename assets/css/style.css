@@ -1,0 +1,237 @@
+/* ===========================
+   General Styles
+=========================== */
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f8f9fc;
+  color: #222;
+}
+
+a {
+  color: #b1333a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2em;
+}
+
+/* ===========================
+   Generic Components
+=========================== */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.beautiful-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #b1333a, #f0d954);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.beautiful-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.beautiful-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* ===========================
+   Navbar
+=========================== */
+.navbar {
+  background-color: #682860;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+  background-color: #b1333a;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ddeeff;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* ===========================
+   Banner
+=========================== */
+.banner-image {
+  background: url('https://butler-jcr-public.s3.eu-west-2.amazonaws.com/assets/moundAerial.jpg') no-repeat center center/cover;
+  height: 50vh;
+  width: 100%;
+}
+
+/* ===========================
+   Welcome Message
+=========================== */
+.welcome-message {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #b1333a;
+}
+
+.welcome-message h1 {
+  color: #f0d954;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* ===========================
+   Faces of Butler
+=========================== */
+.faces-of-butler {
+  background-color: #b1333a;
+  color: white;
+}
+
+.faces-of-butler a {
+  color: #f0d954;
+}
+
+.face-row {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.face-img img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.face-content {
+  flex: 1;
+  min-width: 240px;
+}
+
+.face-content h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .face-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ===========================
+   Facilities
+=========================== */
+.facility-row {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.facility-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.facility-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.facility-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* ===========================
+   Misc
+=========================== */
+.main-content {
+  padding: 2rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
