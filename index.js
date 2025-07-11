@@ -4,7 +4,8 @@ const pageMaps = {
     "GET/contact":"contact.html",
     "GET/freshers":"freshers.html",
     "GET/privacy":"privacy.html",
-    "GET/welfare":"welfare.html"
+    "GET/welfare":"welfare.html",
+    "GET/groups":"groups.html"
 }
 
 const extraMaps = {
@@ -32,6 +33,10 @@ module.exports.handler = async (event) => {
         returnBody.headers["Content-Type"] = extraMaps[pageCode].contentType;
     } else {
         returnBody.body = fs.readFileSync(`assets/html/404.html`);
+    }
+
+    if(pageCode == "GET/groups"){
+        // inject stuff for groups
     }
 
     returnBody.body = returnBody.body.toString();
